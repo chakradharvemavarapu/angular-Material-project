@@ -1,0 +1,24 @@
+
+  {
+    "orders" : {
+        
+        "name":"Total Orders",
+        "total":"2050"
+    },
+    "expenses" : {
+        
+        "name":"Total Expenses",
+        "total":"3250"
+    },
+    "revenue" : {
+        
+        "name":"Total Revenue",
+        "total":"87.5"
+    },
+    "users" : {
+        
+        "name":"Total Users",
+        "total":"2550"
+    }
+  }
+    

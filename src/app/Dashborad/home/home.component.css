@@ -1,0 +1,48 @@
+.dashborad {
+    margin-top: 20px;
+    border-bottom: 1px solid gray;
+    padding: 6px;
+}
+
+.card {
+    border: 0px;
+    width: 230px;
+    height: 80px;
+}
+
+.card1 {
+    background: linear-gradient(90deg, hsla(181, 76%, 51%, 1) 0%, hsla(217, 100%, 50%, 1) 100%, hsla(223, 77%, 63%, 1) 100%);
+}
+
+.card2 {
+    background: linear-gradient(90deg, hsla(333, 85%, 62%, 1) 0%, hsla(357, 99%, 72%, 1) 100%);
+}
+
+.card3 {
+    background: linear-gradient(90deg, hsla(153, 71%, 56%, 1) 0%, hsla(179, 51%, 48%, 1) 100%);
+}
+
+.card4 {
+    background: linear-gradient(90deg, hsla(46, 100%, 63%, 1) 0%, hsla(21, 97%, 65%, 1) 100%);
+}
+
+.col-sm-7 {
+    color: white;
+}
+
+.width-dividing {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.col-sm-3 svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+}

@@ -28,3 +28,15 @@ mat-sidenav-container {
 .chevron-button.rotated {
     transform: rotate(180deg);
 }
+.dropdown-menu {
+    background-color: rgb(101, 108, 108);
+}
+.dropdown-menu>li a{
+    justify-content: center;
+    display: flex;
+    padding: 6px;
+    color: white;
+}
+.dropdown-menu>li a:hover{
+    background-color: rgb(71, 71, 234);
+}

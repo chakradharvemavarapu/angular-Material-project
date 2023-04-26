@@ -1,37 +1,4 @@
 <ngx-spinner type="ball-scale-multiple"></ngx-spinner>
-<!-- 
-<mat-toolbar color="primary">
-    <mat-toolbar-row>
-        <button mat-icon-button>
-            <mat-icon (click)="sidenav.toggle()" >menu</mat-icon>
-        </button>
-        <h1>Side Nav</h1>
-    <span class="example-spacer"></span>
-    <mat-form-field >
-        <input matInput placeholder="Searching">
-        <mat-icon matSuffix>search</mat-icon>
-      </mat-form-field> &nbsp;&nbsp;&nbsp;&nbsp;
-      <button class="logOut-button" mat-raised-button color="warn" (click)="logout()">LogOut</button>
-</mat-toolbar-row>
-  </mat-toolbar>
-
-  <mat-sidenav-container >
-    <mat-sidenav #sidenav>
-        <mat-nav-list>
-            <a mat-list-item>Home</a>
-            <a mat-list-item >Home
-             
-            </a>
-           
-            <a mat-list-item>Home sdfhkjghyugtfytduvbyuy</a>
-            <a mat-list-item>Home</a>
-        </mat-nav-list>
-    </mat-sidenav>
-    <mat-sidenav-content>
-        <div style="height: 84vh;"></div>
-    </mat-sidenav-content>
-  </mat-sidenav-container> -->
-
 
 <mat-sidenav-container autosize>
     <mat-sidenav #sidenav mode="side" opened="isExpanded">
@@ -66,14 +33,22 @@
             <mat-toolbar-row>
                 <h1>Side Nav</h1>
                 <span class="example-spacer"></span>
-                <mat-form-field>
-                    <input matInput placeholder="Searching">
-                    <mat-icon matSuffix>search</mat-icon>
-                </mat-form-field> &nbsp;&nbsp;&nbsp;&nbsp;
-                <button class="logOut-button" mat-raised-button color="warn" (click)="logout()">LogOut</button>
+                   <div class="dropdown">
+                    <button type="button" mat-button color="accent" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                        <img [src]="userDisplayphoto" height="30px" width="30px" class="rounded-pill">&nbsp;
+                        <span>{{userDisplayName}}</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a (click)="logout()">Logout</a></li>
+                      <li><a>Logout</a></li>
+                      <li><a>Logout</a></li>
+                      
+                    </ul>
+                  </div>
             </mat-toolbar-row>
         </mat-toolbar>
         <router-outlet></router-outlet>
     </mat-sidenav-content>
 
 </mat-sidenav-container>
+<app-footer></app-footer>

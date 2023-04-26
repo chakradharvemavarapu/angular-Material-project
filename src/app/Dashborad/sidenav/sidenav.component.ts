@@ -11,13 +11,16 @@ import { ToastrService } from 'ngx-toastr';
 export class SidenavComponent implements OnInit {
 
   isExpanded: boolean = false;
+  userDisplayName: any;
+  userDisplayphoto: any;
 
   constructor(private spinner: NgxSpinnerService,
                private toastr: ToastrService,
                private router: Router) {}
 
   ngOnInit() {
- 
+    this.userDisplayName = sessionStorage.getItem('loggedUser');
+    this.userDisplayphoto = sessionStorage.getItem('loggedphoto');
     
   }
  

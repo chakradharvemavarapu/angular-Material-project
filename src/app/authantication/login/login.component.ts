@@ -26,6 +26,8 @@ export class LoginComponent {
     this.http.get<any>("assets/loginData.json")
       .subscribe((res:any)=> {
         const user = res.find((a: any) => {
+          sessionStorage.setItem('loggedUser', a.username);
+          sessionStorage.setItem('loggedphoto', a.userphoto);
           return a.email === this.email.value && a.password === this.password.value
         });
         if (user) {
