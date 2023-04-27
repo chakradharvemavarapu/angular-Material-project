@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgxSpinnerService } from "ngx-spinner";
 import { ToastrService } from 'ngx-toastr';
+import { DashboradService } from '../dashborad.service';
 
 @Component({
   selector: 'app-sidenav',
@@ -13,14 +14,17 @@ export class SidenavComponent implements OnInit {
   isExpanded: boolean = false;
   userDisplayName: any;
   userDisplayphoto: any;
+  dashbordData: any;
 
   constructor(private spinner: NgxSpinnerService,
                private toastr: ToastrService,
-               private router: Router) {}
+               private router: Router,
+             ) {}
 
   ngOnInit() {
     this.userDisplayName = sessionStorage.getItem('loggedUser');
     this.userDisplayphoto = sessionStorage.getItem('loggedphoto');
+  
     
   }
  

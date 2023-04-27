@@ -10,6 +10,8 @@ import {MatMenuModule} from '@angular/material/menu';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { ToastrModule } from 'ngx-toastr';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { HttpClientModule } from '@angular/common/http';
+import { GoogleChartsModule } from 'angular-google-charts';
 
 
 
@@ -23,7 +25,10 @@ const materialComponent = [ MatButtonModule,
                             MatMenuModule,
                             NgxSpinnerModule,
                             ToastrModule.forRoot(),
-                            MatTooltipModule,]
+                            MatTooltipModule,
+                           HttpClientModule,
+                           GoogleChartsModule
+]
 @NgModule({
   declarations: [],
   imports: [ materialComponent],

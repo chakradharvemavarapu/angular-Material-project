@@ -5,6 +5,7 @@ import { RegisterComponent } from './authantication/register/register.component'
 import { WildcardComponent } from './authantication/wildcard/wildcard.component';
 import { HomeComponent } from './Dashborad/home/home.component';
 
+
 const routes: Routes = [
   {path:"", redirectTo:"login", pathMatch:"full"},
   {path:"login", component:LoginComponent},

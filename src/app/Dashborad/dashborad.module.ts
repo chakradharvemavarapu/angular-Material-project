@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from '../footer/footer/footer.component';
 import { AppComponent } from '../app.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DashboradService } from './dashborad.service';
+import { GoogleChartsModule } from 'angular-google-charts';
 
 
 
@@ -21,9 +23,10 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     DashboradRoutingModule,
     MaterialModule ,
-    HttpClientModule
+    HttpClientModule,
+    GoogleChartsModule
   ],
-  providers: [],
+  providers: [DashboradService],
   bootstrap: [AppComponent]
 })
 export class DashboradModule { }

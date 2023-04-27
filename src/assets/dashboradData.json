@@ -1,0 +1,24 @@
+
+  [
+    {
+        
+        "ordersname":"Total Orders",
+        "orderstotal":"2050"
+    },
+     {
+        
+        "expensesname":"Total Expenses",
+        "expensestotal":"3250"
+    },
+     {
+        
+        "revenuename":"Total Revenue",
+        "revenuetotal":"87.5"
+    },
+     {
+        
+        "usersname":"Total Users",
+        "userstotal":"2550"
+    }
+]
+    
